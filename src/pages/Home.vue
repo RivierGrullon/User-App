@@ -23,7 +23,7 @@ onMounted(async () => {
   <div class="w-auto max-w-lg mx-auto mt-5">
     <img
       class="mx-auto h-12 w-auto"
-      src="img/black-logo.png"
+      src="/img/black-logo.png"
       alt="Mctekk logo"
     />
     <error-alert v-show="store.error" :error="store.error" />

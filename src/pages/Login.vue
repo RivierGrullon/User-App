@@ -1,4 +1,5 @@
 <script setup lang="ts">
+//@ts-ignore
 import { ref } from "vue";
 import { useUserStore } from "../stores/UserStore";
 import { useRouter } from "vue-router";
@@ -27,7 +28,7 @@ function Auth() {
       <div>
         <img
           class="mx-auto h-12 w-auto"
-          src="img/black-logo.png"
+          src="/img/black-logo.png"
           alt="Mctekk logo"
         />
         <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -37,7 +38,7 @@ function Auth() {
       <error-alert v-show="store.error" :error="store.error!" />
       <div v-for="(error, key) in store.multipleErrors">
         <!-- ignore next line -->
-        <error-alert v-show="store.error" :error="error.join('')" :key="key" />
+        <error-alert v-show="store.error" :error="error" :key="key" />
       </div>
       <div class="mt-8 space-y-6">
         <div class="rounded-md shadow-sm -space-y-px">
