@@ -8,22 +8,11 @@
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
+    "isolatedModules": false,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "lib": [
-      "esnext",
-      "dom"
-    ],
-    "types": [
-      "vite/client", // if using vite
-      "node"
-    ]
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true
   },
-  "include": [
-    "src/stores/*.ts",
-    "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-  ]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
