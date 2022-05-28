@@ -37,7 +37,7 @@ defineProps<{ user: any }>();
       <span class="font-bold"> Created at: </span>
 
       <span>
-        {{ (user?.created_at) }}
+        {{ user?.registered }}
       </span>
     </div>
   </div>
