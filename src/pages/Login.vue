@@ -1,7 +1,7 @@
 <script setup lang="ts">
 //@ts-ignore
 import { ref } from "vue";
-import { useUserStore } from "../stores/UserStore";
+import { useUserStore } from "../stores/userStore";
 import { useRouter } from "vue-router";
 import ErrorAlert from "../components/ErrorAlert.vue";
 
@@ -15,7 +15,7 @@ function Auth() {
     .then(() => {
       router.push("/home");
     })
-    .catch((error) => {
+    .catch((error: any) => {
       console.log(error);
     });
 }

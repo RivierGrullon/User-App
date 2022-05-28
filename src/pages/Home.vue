@@ -2,7 +2,7 @@
 import ErrorAlert from "../components/ErrorAlert.vue";
 import User from "../components/User.vue";
 import { useRouter } from "vue-router";
-import { useUserStore } from "../stores/UserStore";
+import { useUserStore } from "../stores/userStore";
 import { onMounted, ref } from "vue";
 
 const router = useRouter();
